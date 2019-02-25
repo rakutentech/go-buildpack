@@ -1,60 +1,74 @@
 ---
 language: go
-
 url_to_dependency_map:
-  - match: go(\d+\.\d+(.*))
-    name: go
-    version: $1
-  - match: godep
-    name: godep
-    version: v55
-
+- match: go(\d+\.\d+(.*))
+  name: go
+  version: "$1"
+- match: godep
+  name: godep
+  version: v55
 dependencies:
-  - name: go
-    version: 1.4.2
-    uri: https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz
-    md5: cdc1ff96c6c99b918402693a5cf0e1f3
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.4.3
-    uri: https://storage.googleapis.com/golang/go1.4.3.linux-amd64.tar.gz
-    md5: 814fad4ac7dedfb5e286df83cdc7fc21
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.5.2
-    uri: https://storage.googleapis.com/golang/go1.5.2.linux-amd64.tar.gz
-    md5: 7326543a5282cac87a892d8289714777
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.6
-    uri: https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
-    md5: 6a33d46fa4646b2ccfa7612b939677fa
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.5.3
-    uri: https://storage.googleapis.com/golang/go1.5.3.linux-amd64.tar.gz
-    md5: 31717324cabc5f8c537deee00a5a2b3c
-    cf_stacks:
-      - cflinuxfs2
-  - name: godep
-    version: v55
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/godep/godep-v55-linux-x64.tgz
-    md5: ef026268c08094339d63e6f5f379d343
-    cf_stacks:
-      - cflinuxfs2
-
-
+- name: go
+  version: 1.4.2
+  uri: https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz
+  md5: cdc1ff96c6c99b918402693a5cf0e1f3
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.4.3
+  uri: https://storage.googleapis.com/golang/go1.4.3.linux-amd64.tar.gz
+  md5: 814fad4ac7dedfb5e286df83cdc7fc21
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.5.2
+  uri: https://storage.googleapis.com/golang/go1.5.2.linux-amd64.tar.gz
+  md5: 7326543a5282cac87a892d8289714777
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.6
+  uri: https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz
+  md5: 6a33d46fa4646b2ccfa7612b939677fa
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.5.3
+  uri: https://storage.googleapis.com/golang/go1.5.3.linux-amd64.tar.gz
+  md5: 31717324cabc5f8c537deee00a5a2b3c
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: godep
+  version: v55
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/godep/godep-v55-linux-x64.tgz
+  md5: ef026268c08094339d63e6f5f379d343
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
 exclude_files:
-  - .git/
-  - .gitignore
-  - .gitmodules
-  - cf_spec/
-  - log/
-  - bin/package
-  - buildpack-packager/
-  - test-godir/
-  - go_buildpack-*v*.zip
+- ".git/"
+- ".gitignore"
+- ".gitmodules"
+- cf_spec/
+- log/
+- bin/package
+- buildpack-packager/
+- test-godir/
+- go_buildpack-*v*.zip
