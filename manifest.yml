@@ -1,69 +1,89 @@
 ---
 language: go
-
 url_to_dependency_map:
-  - match: go(.*)
-    name: go
-    version: $1
-
+- match: go(.*)
+  name: go
+  version: "$1"
 dependencies:
-  - name: go
-    version: 1.2.1
-    uri: http://go.googlecode.com/files/go1.2.1.linux-amd64.tar.gz
-    md5: 683a18e2565b1b29933321852fb7bdb8
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.2.2
-    uri: https://storage.googleapis.com/golang/go1.2.2.linux-amd64.tar.gz
-    md5: 57ca0f3a7897d37383b8d50b5ef4358b
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.3.2
-    uri: https://storage.googleapis.com/golang/go1.3.2.linux-amd64.tar.gz
-    md5: 180846a4f106745094552069d1564a7a
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.3.3
-    uri: https://storage.googleapis.com/golang/go1.3.3.linux-amd64.tar.gz
-    md5: 07f9eef17299cd528f03ab95f9fd47f6
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.4.2
-    uri: https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz
-    md5: cdc1ff96c6c99b918402693a5cf0e1f3
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.4.3
-    uri: https://storage.googleapis.com/golang/go1.4.3.linux-amd64.tar.gz
-    md5: 814fad4ac7dedfb5e286df83cdc7fc21
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.5
-    uri: https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
-    md5: d32ba4e554cc421b3c5ae43775d04be5
-    cf_stacks:
-      - cflinuxfs2
-  - name: go
-    version: 1.5.1
-    uri: https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
-    md5: 73fe663350c79d73b16f3f7a899ae61e
-    cf_stacks:
-      - cflinuxfs2
-
-
+- name: go
+  version: 1.2.1
+  uri: http://go.googlecode.com/files/go1.2.1.linux-amd64.tar.gz
+  md5: 683a18e2565b1b29933321852fb7bdb8
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.2.2
+  uri: https://storage.googleapis.com/golang/go1.2.2.linux-amd64.tar.gz
+  md5: 57ca0f3a7897d37383b8d50b5ef4358b
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.3.2
+  uri: https://storage.googleapis.com/golang/go1.3.2.linux-amd64.tar.gz
+  md5: 180846a4f106745094552069d1564a7a
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.3.3
+  uri: https://storage.googleapis.com/golang/go1.3.3.linux-amd64.tar.gz
+  md5: 07f9eef17299cd528f03ab95f9fd47f6
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.4.2
+  uri: https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz
+  md5: cdc1ff96c6c99b918402693a5cf0e1f3
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.4.3
+  uri: https://storage.googleapis.com/golang/go1.4.3.linux-amd64.tar.gz
+  md5: 814fad4ac7dedfb5e286df83cdc7fc21
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.5
+  uri: https://storage.googleapis.com/golang/go1.5.linux-amd64.tar.gz
+  md5: d32ba4e554cc421b3c5ae43775d04be5
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+- name: go
+  version: 1.5.1
+  uri: https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
+  md5: 73fe663350c79d73b16f3f7a899ae61e
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
 exclude_files:
-  - .git/
-  - .gitignore
-  - .gitmodules
-  - cf_spec/
-  - log/
-  - bin/package
-  - buildpack-packager/
-  - test-godir/
-  - go_buildpack-*v*.zip
+- ".git/"
+- ".gitignore"
+- ".gitmodules"
+- cf_spec/
+- log/
+- bin/package
+- buildpack-packager/
+- test-godir/
+- go_buildpack-*v*.zip
