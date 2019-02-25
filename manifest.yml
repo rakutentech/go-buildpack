@@ -25,42 +25,63 @@ dependencies:
   md5: 684cb84f270974a61cc3ecdf7fe9511b
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: go
   version: 1.6.4
   uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.6.4.linux-amd64-342b0164.tar.gz
   md5: 342b016400511ec1f6d97f49e72d2386
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: go
   version: 1.7.5
   uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.7.5.linux-amd64-c9de5bb9.tar.gz
   md5: c9de5bb95790044de676301898e92a1b
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: go
   version: 1.7.4
   uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.7.4.linux-amd64-bb76b26f.tar.gz
   md5: bb76b26f8dc9886d42291eba95c84f10
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: go
   version: 1.8.0
   uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.8.linux-amd64-7eff0eab.tar.gz
   md5: 7eff0eab89b4bbdc4edea6beb672ed66
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: glide
   version: v0.12.3
   uri: https://buildpacks.cloudfoundry.org/dependencies/glide/glide-v0.12.3-linux-x64-5b2e71ff.tgz
   md5: 5b2e71ff152b5f00a0f944d57ff25ca3
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: godep
   version: v79
   uri: https://buildpacks.cloudfoundry.org/dependencies/godep/godep-v79-linux-x64-9e37ce0f.tgz
   md5: 9e37ce0f6a258baf4848ded20ef49ba4
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 exclude_files:
 - ".git/"
 - ".gitignore"
