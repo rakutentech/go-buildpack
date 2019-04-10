@@ -15,6 +15,9 @@ dependencies:
   sha256: 1140736d28078d5bd75d8e958bdd15cf73a77373961158ac1107a7487e4ffcfb
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://github.com/golang/dep/archive/v0.5.1.tar.gz
   source_sha256: 720752ee3a089a8c6ee6a8ebecc7c70881bf2d994d3183d192a588398484b8d4
 - name: dep
@@ -31,6 +34,9 @@ dependencies:
   sha256: b50997e2dea986f600045b7467c683c515ae44fd10395d3fa5cea5504635b47b
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://github.com/Masterminds/glide/archive/v0.13.2.tar.gz
   source_sha256: '0886851af2437b161d47b279a32bef426577e7bec3f5acdadebe34549aae8270'
 - name: glide
@@ -47,6 +53,9 @@ dependencies:
   sha256: 993886156b521368965139fcb5f4af517012e70b9005229b978ddaf8923db803
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://dl.google.com/go/go1.10.7.src.tar.gz
   source_sha256: b84a0d7c90789f3a2ec5349dbe7419efb81f1fac9289b6f60df86bd919bd4447
 - name: go
@@ -63,6 +72,9 @@ dependencies:
   sha256: f57bb9f0b1e9c0407393afb4508453f2a1283a89daee99c0d3732e0ba827a889
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://dl.google.com/go/go1.10.8.src.tar.gz
   source_sha256: 6faf74046b5e24c2c0b46e78571cca4d65e1b89819da1089e53ea57539c63491
 - name: go
@@ -79,6 +91,9 @@ dependencies:
   sha256: 444190726b62835ebf380baa42d01733823196bf7c8877b693cde05f7135737a
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://dl.google.com/go/go1.11.6.src.tar.gz
   source_sha256: a96da1425dcbec094736033a8a416316547f8100ab4b72c31d4824d761d3e133
 - name: go
@@ -95,6 +110,9 @@ dependencies:
   sha256: 4b291831e8b07c2c23f552389c0a853655563357d010f9b352c84290ea5f2b15
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://dl.google.com/go/go1.11.7.src.tar.gz
   source_sha256: cfbe1078fbb1e34e77ad09de40d96d47ef280ba15791da9f02fc05486a4b16bd
 - name: go
@@ -111,6 +129,9 @@ dependencies:
   sha256: b497829436f4c1ef920d7b37f0167734fc875f75763d770cda6c91568721f8d3
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://dl.google.com/go/go1.12.1.src.tar.gz
   source_sha256: 0be127684df4b842a64e58093154f9d15422f1405f1fcff4b2c36ffc6a15818a
 - name: go
@@ -127,6 +148,9 @@ dependencies:
   sha256: e52d1c810933ad4066587e9a305027585e9d084559d5dcc3b5da5b2c2f506db8
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://dl.google.com/go/go1.12.2.src.tar.gz
   source_sha256: af992580a4a609309c734d46fd4374fe3095961263e609d9b017e2dffc3b7b58
 - name: go
@@ -143,6 +167,9 @@ dependencies:
   sha256: 06cdb761cadb70a5c49f893883be4e7b3cb213b6041e294a678148be8bb3b82b
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://github.com/tools/godep/archive/v80.tar.gz
   source_sha256: '029adc1a0ce5c63cd40b56660664e73456648e5c031ba6c214ba1e1e9fc86cf6'
 - name: godep
